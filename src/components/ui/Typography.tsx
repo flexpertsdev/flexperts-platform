@@ -114,12 +114,12 @@ const textVariants = cva(
 )
 
 export interface TextProps
-  extends Omit<React.HTMLAttributes<HTMLParagraphElement>, 'color'>,
+  extends Omit<React.HTMLAttributes<HTMLElement>, 'color'>,
     VariantProps<typeof textVariants> {
   as?: 'p' | 'span' | 'div' | 'label'
 }
 
-const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
+const Text = React.forwardRef<HTMLElement, TextProps>(
   ({ className, size, weight, color, align, lineHeight, as = 'p', ...props }, ref) => {
     const Component = as
     
@@ -130,7 +130,7 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
           textVariants({ size, weight, color, align, lineHeight }),
           className
         )}
-        {...props}
+        {...props as any}
       />
     )
   }
