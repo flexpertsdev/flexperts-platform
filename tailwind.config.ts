@@ -21,7 +21,9 @@ const config: Config = {
         "border-secondary": "rgb(var(--color-border-secondary) / <alpha-value>)",
         input: "rgb(var(--color-border) / <alpha-value>)",
         ring: "rgb(var(--color-primary) / <alpha-value>)",
-        background: "rgb(var(--color-background) / <alpha-value>)",
+        background: {
+          DEFAULT: "rgb(var(--color-background) / <alpha-value>)",
+        },
         foreground: "rgb(var(--color-text) / <alpha-value>)",
         canvas: "rgb(var(--color-canvas) / <alpha-value>)",
         primary: {

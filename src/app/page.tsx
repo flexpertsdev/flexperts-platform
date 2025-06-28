@@ -1,7 +1,7 @@
 'use client'
 
 import { Container, Heading, Text, Button, Stack, Grid, Card, CardHeader, CardTitle, CardDescription } from '@/components/ui'
-import { MessageSquare, Sparkles, Zap, Users, ArrowRight } from 'lucide-react'
+import { MessageSquare, Sparkles, Zap, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import { useAuth } from '@/providers/AuthProvider'
 
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="space-y-2">
                   <Heading size="h4">Design Visually</Heading>
                   <Text color="secondary">
-                    Use our intuitive tools to design your app's interface and user experience.
+                    Use our intuitive tools to design your app&apos;s interface and user experience.
                   </Text>
                 </div>
               </div>

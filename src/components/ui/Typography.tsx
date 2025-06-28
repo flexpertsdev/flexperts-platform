@@ -125,7 +125,7 @@ const Text = React.forwardRef<HTMLParagraphElement, TextProps>(
     
     return (
       <Component
-        ref={ref}
+        ref={ref as any}
         className={cn(
           textVariants({ size, weight, color, align, lineHeight }),
           className

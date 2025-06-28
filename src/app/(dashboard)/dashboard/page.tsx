@@ -1,7 +1,7 @@
 'use client'
 
 import { useAuth } from '@/providers/AuthProvider'
-import { Container, Heading, Text, Button, Card, CardHeader, CardTitle, CardDescription, Grid, Stack } from '@/components/ui'
+import { Container, Heading, Text, Button, Card, CardHeader, CardTitle, CardDescription, Grid } from '@/components/ui'
 import { LogOut, MessageSquare, Layout, Sparkles } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
