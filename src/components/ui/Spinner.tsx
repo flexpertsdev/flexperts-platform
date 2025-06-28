@@ -1,5 +1,4 @@
 'use client'
-
 import * as React from 'react'
 import { cn } from '@/lib/utils'
 import { cva, type VariantProps } from 'class-variance-authority'
@@ -29,7 +28,7 @@ const spinnerVariants = cva(
 )
 
 export interface SpinnerProps
-  extends React.HTMLAttributes<HTMLDivElement>,
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'color'>,
     VariantProps<typeof spinnerVariants> {
   label?: string
 }
@@ -51,6 +50,7 @@ const Spinner = React.forwardRef<HTMLDivElement, SpinnerProps>(
     </div>
   )
 )
+
 Spinner.displayName = 'Spinner'
 
 export { Spinner, spinnerVariants }

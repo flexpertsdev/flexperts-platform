@@ -9,7 +9,7 @@ const cardVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-surface border border-border',
+        default: 'bg-surface border border',
         elevated: 'bg-surface shadow-md hover:shadow-lg',
         ghost: 'bg-transparent',
         gradient: 'bg-gradient-to-br from-primary-light to-primary/20 border border-primary/20',

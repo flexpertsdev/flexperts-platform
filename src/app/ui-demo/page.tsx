@@ -383,7 +383,7 @@ export default function UIDemo() {
               </div>
             </div>
             
-            <div className="p-4 border-t border-border">
+            <div className="p-4 border-t border">
               <div className="flex gap-2">
                 <Input
                   placeholder="Type a message..."
