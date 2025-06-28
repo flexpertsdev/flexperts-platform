@@ -57,11 +57,15 @@
 
 ## 🎯 Overall Progress
 
-### MVP Features (0% → 10%)
+### MVP Features (0% → 25%)
 - [x] Project initialization
 - [x] Dependency setup
 - [x] Documentation structure
-- [ ] Authentication system
+- [x] Authentication system (Supabase configured, auth pages created)
+- [x] Design system implementation (CSS variables, theme support)
+- [x] Base UI components (Button, Card, Input, Badge, Spinner, Textarea)
+- [x] ESLint configuration
+- [x] Middleware for protected routes
 - [ ] Chat interface
 - [ ] Wireframe builder
 - [ ] Export system
