@@ -147,7 +147,7 @@ const Code = React.forwardRef<HTMLElement, CodeProps>(
     if (block) {
       return (
         <pre
-          ref={ref}
+          ref={ref as any}
           className={cn(
             'relative rounded-lg bg-surface-3 p-4 text-sm overflow-x-auto',
             className
@@ -160,7 +160,7 @@ const Code = React.forwardRef<HTMLElement, CodeProps>(
 
     return (
       <code
-        ref={ref}
+        ref={ref as any}
         className={cn(
           'relative rounded bg-surface-3 py-0.5 px-1.5 text-sm font-mono',
           className
